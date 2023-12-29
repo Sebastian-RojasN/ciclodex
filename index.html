@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyclodextrin Delta G Predictor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- NavBar  -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <a class="navbar-brand" href="#">Cyclodextrin Project</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado  -->
+    <div class=" py-5">
+        <div class="container mx-auto py-5 rounded-lg">
+            <div class="row align-items-center py-5">
+                <div class="col-md-8 pe-5">
+                    <h1 class="display-3">Beta Cyclodextrin</h1>
+                    <p class="lead py-3">La <b>beta-ciclodextrina</b>, parte de las ciclodextrinas, tiene una estructura
+                        anular de siete unidades de glucosa y destaca por encapsular moléculas hidrofóbicas. Ampliamente
+                        usada en la industria farmacéutica para mejorar la solubilidad de fármacos, también se aplica en
+                        la industria alimentaria y cosmética para estabilizar ingredientes. Su versatilidad se explora
+                        en síntesis químicas y remediación ambiental, aunque se sigue investigando su seguridad y
+                        aplicaciones futuras.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="/Clipped_image_20231201_135041.png" class="img-fluid" alt="..">
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Contenido principal -->
+<div class="text-center mx-auto py-5">
+    <div class="container py-5 rounded-lg">
+        <div class="row align-items-center">
+            <div class="col-md-6 py-5">
+                <p class="lead text-start">Calcular la constante de asociación entre una ciclodextrina y una molécula huésped
+                    es esencial en varios sectores. No obstante, este proceso es lento, tedioso y requiere muestras
+                    de ambas moléculas.
+                </p>
+            </div>
+            <div class="col-md-12 mx-auto text-center py-5">
+                <img src="/molecules-23-01204-g001.webp" class="img-fluid" alt="..">
+            </div>
+            <div class="col-md-6"></div>
+
+            <div class="col-md-6 py-5">
+                <p class="lead text-end">Dado que existen numerosas constantes de asociación y datos en la literatura, es
+                    viable emplear técnicas de aprendizaje automático para predecirlas.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Machine Learning -->
+    <div class="text-center mx-auto py-5">
+        <div class="container py-5 rounded-lg">
+            <div class="row align-items-center py-5">
+                <div class="col-md-12">
+                    <h1 class="display-3">Machine Learning</h1>
+                    <p class="lead py-3">Se llevó a cabo un modelado de machine learning utilizando diversos descriptores
+                        para estimar la constante de asociación delta G. Esta aproximación se adoptó como respuesta a
+                        los desafíos relacionados con los elevados costos temporales y de muestras necesarios para
+                        determinar dicha constante directamente. La implementación de modelos de machine learning ofrece
+                        una alternativa eficiente y menos costosa, permitiendo la predicción de la constante de
+                        asociación delta G mediante la utilización de características descriptivas, lo que facilita un
+                        enfoque más práctico y accesible en términos de recursos.</p>
+                </div>
+                <div class="col-md-6 py-3">
+                    <img src="/XGB model.png" class="img-fluid" alt="..">
+                </div>
+                <div class="col-md-6">
+                    <img src="/descarga.png" class="img-fluid" alt="..">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mx-auto py-5 ">
+        <div class="container p-5 rounded-lg">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <h1 class="display-5">Precisión</h1>
+                    <p class="lead">Se llevó a cabo un modelado de machine learning utilizando diversos descriptores
+                        para estimar la constante de asociación delta G. Esta aproximación se adoptó como respuesta a
+                        los desafíos relacionados con los elevados costos temporales y de muestras necesarios para
+                        determinar dicha constante directamente. La implementación de modelos de machine learning ofrece
+                        una alternativa eficiente y menos costosa, permitiendo la predicción de la constante de
+                        asociación delta G mediante la utilización de características descriptivas, lo que facilita un
+                        enfoque más práctico y accesible en términos de recursos.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2023 Cyclodextrin Project</p>
+    </footer>
+
+    <!-- Agrega los enlaces a los archivos JavaScript de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
