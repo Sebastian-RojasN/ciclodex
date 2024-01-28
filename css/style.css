@@ -14,6 +14,9 @@ body {
     font-family: 'Hedvig Letters Serif', serif;
 }
 
+
+
+
 .header-container,
 .main-content,
 .footer-container {
@@ -52,9 +55,6 @@ body {
     z-index: 999;
 }
 
-.custom-font-title {
-    font-size: 10em;
-}
 
 .mujer-locion {
     border-radius: 500px;
@@ -70,6 +70,12 @@ body {
 }
 .custom-font-title-2 {
     font-size: 8em;
+    background: radial-gradient(circle, #00c700 0%, #003800 100%);
+    background-clip: text;
+    color: transparent;
+}
+.custom-font-title-2 {
+    font-size: 5em;
     background: radial-gradient(circle, #00c700 0%, #003800 100%);
     background-clip: text;
     color: transparent;
@@ -140,6 +146,16 @@ body {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0),
         rgba(255, 255, 255, 1), rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)),
         url('../Recursos/IMG/envase.jpg');
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 20px;
+    background-size: cover;
+}
+.background-gradient-2-sensivivo {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)),
+        url('../Recursos/IMG/algas-fondo.jpg');
     width: 100%;
     height: 100%;
     color: white;
@@ -260,4 +276,137 @@ body {
     max-width: 100%;
     height: auto;
     transition: transform 0.5s ease;
+}
+
+
+.background-botellas{
+    background-image: url('../Recursos/IMG/botellas.jpg');
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* ... (tu CSS actual) ... */
+
+/* Estilos específicos para pantallas pequeñas (máximo 767px) */
+@media (max-width: 767px) {
+    .custom-font-title {
+        font-size: 5em;
+    }
+
+    .custom-font-title-2 {
+        font-size: 3em;
+    }
+
+    .custom-font-title-monster {
+        font-size: 6em;
+    }
+
+    .custom-font-title-2-monster {
+        font-size: 1.5em;
+    }
+
+    .subtittle {
+        font-size: 1.8em;
+    }
+
+    .custom-font-title-about{
+        font-size: 5em;
+    }
+    .texto-about{
+        font-size: 2em;
+    }
+
+    /* Otros ajustes de estilo para pantallas pequeñas si es necesario */
+}
+
+/* Estilos específicos para pantallas medianas (mínimo 768px y máximo 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .custom-font-title {
+        font-size: 7em;
+    }
+
+    .custom-font-title-2 {
+        font-size: 4em;
+    }
+
+    .custom-font-title-monster {
+        font-size: 10em;
+    }
+
+    .custom-font-title-2-monster {
+        font-size: 3em;
+    }
+
+    .subtittle {
+        font-size: 2em;
+    }
+
+    .custom-font-title-about{
+        font-size: 5em;
+    }
+
+    .texto-about{
+        font-size: 2em;
+    }
+    /* Otros ajustes de estilo para pantallas medianas si es necesario */
+}
+
+/* Estilos específicos para pantallas grandes (mínimo 992px y máximo 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .custom-font-title {
+        font-size: 9em;
+    }
+
+    .custom-font-title-2 {
+        font-size: 5em;
+    }
+
+    .custom-font-title-monster {
+        font-size: 12em;
+    }
+
+    .custom-font-title-2-monster {
+        font-size: 4em;
+    }
+
+    .subtittle {
+        font-size: 2.5em;
+    }
+
+    .custom-font-title-about{
+        font-size: 5em;
+    }
+    
+    .texto-about{
+        font-size: 2em;
+    }
+
+    /* Otros ajustes de estilo para pantallas grandes si es necesario */
+}
+
+/* Estilos específicos para pantallas extra grandes (mínimo 1200px) */
+@media (min-width: 1200px) {
+    .custom-font-title {
+        font-size: 12em;
+    }
+
+    .custom-font-title-2 {
+        font-size: 6em;
+    }
+
+    .custom-font-title-monster {
+        font-size: 15em;
+    }
+
+    .custom-font-title-2-monster {
+        font-size: 5em;
+    }
+
+    .subtittle {
+        font-size: 3em;
+    }
+
+    /* Otros ajustes de estilo para pantallas extra grandes si es necesario */
 }
