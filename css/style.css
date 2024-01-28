@@ -40,7 +40,7 @@ body {
 }
 
 .planta {
-    background: url('Recursos/IMG/plantas.png');
+    background: url('../Recursos/IMG/plantas.png');
     background-size: contain;
     height: 600px;
     width: 100%;
